@@ -1,0 +1,51 @@
+.center1920p {
+    margin: auto;
+    width: 640px;
+    /* Keep to 90% window size */
+    max-width: 90vw;
+}
+
+.form {
+    padding: 24px;
+    background: white;
+    margin: 0 0 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.multipleChoice {
+    padding: 8px 0 8px 0;
+}
+
+.multipleChoice input {
+    width: 16px;
+}
+.multipleChoice label {
+    margin-left: 12px;
+}
+label {
+    margin: 0 0 16px 0;
+}
+
+legend {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+}
+
+p {
+    margin: 0 0 16px 0;
+}
+
+body {
+    background: rgb(240, 235, 248);
+    margin: 0;
+}
+
+header {
+    margin: 12px 0 12px 0;
+    text-align: center;
+}
+
+

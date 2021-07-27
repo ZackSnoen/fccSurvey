@@ -1,0 +1,113 @@
+<!----------------------------------------------------->
+<!--                  Zack Snoen-->
+<!--              ZackSnoen@gmail.com-->
+<!-- Copyright 2021, Zack Snoen, All rights reserved.-->
+<!----------------------------------------------------->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- css file -->
+        <link href="styles.css" rel="stylesheet">
+        
+        <title>Survey!</title>
+
+    </head>
+    <body>
+        <main class="center1920p">
+            <header class="form">
+                <h1 id="title">Exercise Survey</h1>
+                <p id="description">Thank you for taking the time to fill out my survey</p>
+            </header>
+
+            <form id="survey-form">
+                <fieldset class="form">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </fieldset>
+                <fieldset class="form">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </fieldset>
+                <fieldset class="form">
+                    <label for="number" id="number-label">Height:</label>
+                    <input type="number" id="number" name="height" min="0" max="120" step="0.1" placeholder="Your Height (in)">
+                </fieldset>
+                <fieldset class="form">
+                    <label for="weight" id="weight-label">Weight:</label>
+                    <input type="number" id="weight" name="weight" min="0" max="1000" step="0.1" placeholder="Your Weight (lbs)">
+                </fieldset>
+                <fieldset class="form">
+                    <label for="dropdown" id="activity-label">How active are you?</label>
+                    <select name="activity" id="dropdown">
+                        <option value="zero">0 Days/Week</option>
+                        <option value="one">1 Days/Week</option>
+                        <option value="two">2 Days/Week</option>
+                        <option value="three">3 Days/Week</option>
+                        <option value="four">4 Days/Week</option>
+                        <option value="five">5 Days/Week</option>
+                        <option value="six">6 Days/Week</option>
+                        <option value="seven">7 Days/Week</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form">
+                    <legend>What is your main source of activity?</legend>
+                    <p> What is your main source of activity?</p>
+                    <div class="multipleChoice">
+                        <input type="radio" name="source" value="sports" id="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="radio" name="source" value="cardio" id="cardio">
+                        <label for="cardio">Cardio</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="radio" name="source" value="weightlifting" id="weightlifting">
+                        <label for="weightlifting">Weightlifting</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="radio" name="source" value="other" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form">
+                    <legend>What muscle group do you want to improve?</legend>
+                    <p>What muscle group do you want to improve?</p>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="shoulders" id="shoulders">
+                        <label for="shoulders">Shoulders</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="arms" id="arms">
+                        <label for="arms">Arms</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="chest" id="chest">
+                        <label for="chest">Chest</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="back" id="back">
+                        <label for="back">Back</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="core" id="core">
+                        <label for="core">Core</label>
+                    </div>
+                    <div class="multipleChoice">
+                        <input type="checkbox" name="improve" value="legs" id="legs">
+                        <label for="legs">Legs</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form">
+                    <legend>Additional comments?</legend>
+                    <textarea name="comments" id="comments" placeholder="Enter comments here..."></textarea>
+                </fieldset>
+                <fieldset class="form">
+                    <button type="submit" id="submit">Submit </button>
+                </fieldset>
+            </form>
+        </main> 
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    </body>
+</html>
+
